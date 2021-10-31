@@ -15,5 +15,6 @@ namespace Queue
             data = New_Data;
             next = null;
         }
+
     }
 }

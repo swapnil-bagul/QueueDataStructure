@@ -6,6 +6,7 @@ namespace Queue
     {
         static void Main(string[] args)
         {
+
             //Create Object 
             QueueFunction  queueFunction = new QueueFunction();
             //Call Methode
@@ -14,6 +15,10 @@ namespace Queue
             queueFunction.Enqueue(70);
             Console.WriteLine("The Queue list is :");
             queueFunction.Display();
+            queueFunction.Dequeue();
+            Console.WriteLine("the Deueue list is:");
+            queueFunction.Display();
+
         }
     }
 }

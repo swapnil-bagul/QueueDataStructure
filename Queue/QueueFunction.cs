@@ -29,6 +29,20 @@ namespace Queue
             Console.WriteLine("value is inserted " + new_node.data);
         }
 
+        //Dequeue Element of Queue 
+        public void Dequeue()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("No Element Present ");
+            }
+            this.head = temp.next;
+            temp = null;
+
+        }
+
+
         //Display Queue Element
         public void Display()
         {
